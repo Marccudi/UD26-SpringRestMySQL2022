@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "f484335d-551f-45d8-96c7-1847a156a23e",
+		"name": "Task2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14864254"
+	},
+	"item": [
+		{
+			"name": "localhost:8181/api/cientificos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8181/api/cientificos",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"cientificos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/api/proyectos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8181/api/proyectos",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"proyectos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/api/asignadoa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8181/api/asignadoa",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"asignadoa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/api/cientificos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"dni\": \"36876973\",\r\n        \"nomapels\": \"Amalia\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8181/api/cientificos",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"cientificos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/api/proyectos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"A-12\",\r\n        \"nombre\": \"Manatan\",\r\n        \"horas\": 120\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8181/api/proyectos",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"proyectos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/api/asignadoa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"cientifico\": {\r\n            \"dni\": \"36876973\"\r\n        },\r\n        \"proyecto\": {\r\n            \"id\": \"2\"\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8181/api/asignadoa",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"asignadoa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/api/cientificos/36876973",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nomapels\": \"Juana\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8181/api/cientificos/36876973",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"cientificos",
+						"36876973"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/api/proyectos/A-12",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nombre\": \"Manatan2\",\r\n        \"horas\": 1200\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8181/api/proyectos/A-12",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"proyectos",
+						"A-12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/api/asignadoa/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"cientifico\": {\r\n            \"dni\": \"48037986\"\r\n        },\r\n        \"proyecto\": {\r\n            \"id\": \"A-12\"\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8181/api/asignadoa/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"asignadoa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/api/asignadoa/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8181/api/asignadoa/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"asignadoa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/api/proyectos/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8181/api/proyectos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"proyectos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8181/api/cientificos/48037986",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8181/api/cientificos/48037986",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"cientificos",
+						"48037986"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
